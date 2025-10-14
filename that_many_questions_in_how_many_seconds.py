@@ -27,7 +27,6 @@ def mult(a, b):
 # \newcommand{\sub}[2]{#1 - #2}
 # \newcommand{\mult}[2]{#1 \times #2}
 
-# This code is mostly mine but i got fed up with it at the end and told chatgpt to go through and comment and fix some things so this part is like half vibe coded but idc
 def generate_question(curr_layer: int, max_layers: int, highest_layer: int) -> tuple[str, str, float, int]:
     # Probabilities for choosing each operation: add, sub, frac (division), mult
     chances = [0.35, 0.35, 0.15, 0.15]
